@@ -162,7 +162,7 @@
             </div>
             <div class="carousel-down">
                <div class="carousel-down-icon">
-                <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+                <a href="#footer"><i class="fa-solid fa-caret-down"></i></a>
                </div>
             </div>
           </div>
@@ -301,6 +301,59 @@
         </div>
     </section>
     <!-- -------------------------------------Gallery-end-----------------------------------------  -->
+    <!-- -------------------------------------testi---------------------------------------------  -->
+    <section id="testi">
+        <div class="testi-content">
+            <div class="testi-one">
+                <img src="images/testi-img-1.png" alt="">
+            </div>
+            <div class="testi-two">
+                <div class="testi-border">
+                    <img src="images/testi-border.png" alt="">
+                </div>
+                <div class="testi-top-leaf">
+                    <img src="images/testi-top-leaf.png" alt="">
+                </div>
+                <div class="testi-bottom-leaf">
+                    <img src="images/testi-bottom-leaf.png" alt="">
+                </div>
+            </div>
+            <div class="testi-content-one">
+                <h2>Testimonial</h2>
+                <h3>Happy Clients</h3>
+            <div class="owl-carousel owl-theme testi-owl">
+                <div class="item">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has>been the industry's standard dummy text. Lorem Ipsum is  <br> simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br> been the industry's standard dummy text.</p>
+                        <div class="reviewer">
+                            <div class="reviewer-one">
+                                <img src="images/reviewer.png" alt="">
+                            </div>
+                            <div class="reviewer-two">
+                               <h4>Roger Scott</h4>
+                               <h5>Marketing Manager</h5>
+                            </div>
+                        </div>
+                </div>
+                <div class="item">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has>been the industry's standard dummy text. Lorem Ipsum is  <br> simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br> been the industry's standard dummy text.</p>
+                        <div class="reviewer">
+                            <div class="reviewer-one">
+                                <img src="images/reviewer.png" alt="">
+                            </div>
+                            <div class="reviewer-two">
+                               <h4>Roger Scott</h4>
+                               <h5>Marketing Manager</h5>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="testi-btn">
+                <a href="#" class="btn-span"><span href="#">View All</span></a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------testi-end-----------------------------------------  -->
     <!-- -------------------------------------brand---------------------------------------------  -->
     <section id="brand">
         <div class="brand-content">
@@ -407,7 +460,6 @@
     </section>
     <!-- -----------------------------------footer-end------------------------------------------  -->
     </footer>
-  
     <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -431,7 +483,7 @@
             items:1
         },
         600:{
-            items:3
+            items:1
         },
         1000:{
             items:1
@@ -454,6 +506,26 @@
         1000:{
             items:5,
             loop:false,
+        }
+    }
+})
+    </script>
+    <script>
+        $('.testi-owl').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText: ['<i class="fa fa-angle-left testi-nav-left" aria-hidden="true"></i>',
+            '<i class="fa fa-angle-right testi-nav-right" aria-hidden="true"></i>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
         }
     }
 })

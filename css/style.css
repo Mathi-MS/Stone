@@ -48,6 +48,10 @@
     src: url('../fonts/Begilas.otf');
 }
 @font-face {
+    font-family:Begilas-regular;
+    src: url('../fonts/Begilas-regular.otf');
+}
+@font-face {
     font-family:Bagife ;
     src: url('../fonts/Bagife.otf');
 }
@@ -512,10 +516,8 @@ body {
     margin: 0px;
     background: #901c2b;
     display: block;
-    -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
     border-radius:0px;
-    
 }
 #gallery .gallery-btn a{
     font-size: 20px;
@@ -539,6 +541,165 @@ body {
     margin-top: 60px ;
 }
 /* =================================gallery=end================================= */
+/* =================================testi===================================== */
+#testi{
+    background-color: #181818;
+    padding:20px 0px;
+    position: relative;
+}
+#testi .testi-content {
+    width: 88%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    height: 900px;
+}
+#testi .testi-one {
+   position: absolute;
+   left:0px;
+   top: 0px;
+   z-index: 999999;
+}
+#testi .testi-two {
+   margin-left:23%;
+   position: relative;
+}
+#testi .testi-top-leaf{
+    position: absolute;
+    top: -20px;
+    left: 100px;
+}
+#testi .testi-bottom-leaf{
+    position: absolute;
+    bottom: -20px;
+    left: 100px;
+}
+#testi .testimonals{
+   display: flex;
+   flex-direction: row;
+}
+#testi h2{
+    color: white;
+    font-size: 22px;
+    line-height: 0.8;
+    font-family: Begilas;
+    letter-spacing: 2px;
+    font-weight:100;
+    margin: 15px 0px;
+}
+#testi h3{
+    color: white;
+    font-size: 40px;
+    line-height: 0.8;
+    font-family: Begilas;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#testi .testi-content-one{
+    position: absolute;
+    right:200px;
+}
+#testi .testi-content-one p{
+    color: white;
+    font-size:15px;
+    font-family: Begilas;
+    word-spacing: 3px;
+    margin: 45px 0px 30px 0px;
+}
+#testi .testi-content-one .reviewer{
+    display: flex;
+    gap: 20px;
+}
+#testi .testi-content-one h4{
+    color: white;
+    font-size:18px;
+    font-family: Begilas;
+}
+#testi .testi-content-one h5{
+    color: white;
+    font-size:15px;
+    font-family: Begilas;
+}
+#testi .testi-owl{
+    width: 540px;
+}
+#testi .owl-nav{
+    display: inline;
+}
+#testi .testi-nav-left{
+   color: white;
+   position: absolute;
+   bottom:-26px;
+   left:0px;
+}
+#testi .testi-nav-right{
+   color: white;
+   position: absolute;
+   bottom:-26px;
+   left: 360px;
+}
+#testi .owl-next:hover{
+   background-color:transparent;
+}
+#testi .owl-prev:hover{
+   background-color:transparent;
+}
+#testi .owl-prev:focus{
+   outline: none;
+}
+#testi .owl-next:focus{
+   outline: none;
+}
+#testi .owl-dot:hover{
+   background-color: transparent;
+}
+#testi .owl-dot:focus{
+    outline: none;
+}
+#testi .owl-dot{
+    position: absolute;
+    bottom: -20px;
+    left:8px;
+}
+#testi  .owl-theme .owl-dots .owl-dot span {
+    width: 351px;
+    height: 3px;
+    margin: 0px;
+    background: #901c2b;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius:0px;
+}
+#testi .testi-btn a{
+    font-size: 16px;
+    font-family:Begilas;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 0px;
+}
+#testi .testi-btn .btn-span:hover{
+    text-decoration: none;
+}
+#testi .btn-span {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#testi .btn-span::after {
+    content: '-';
+    padding: 0px 0px 0px 5px;
+}
+#testi .btn-span::before {
+    content: '-';
+    padding: 0px 5px 0px 0px;
+}
+#testi .testi-btn {
+    position: absolute;
+    bottom: -30px;
+    right: -130px;
+}
+/* =================================testi=end================================= */
 /* =================================brand===================================== */
 #brand{
     background-color: #181818;
