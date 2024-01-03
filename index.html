@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel VUE</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="aos/css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navabr.css">
+    <link rel="stylesheet" href="owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="js-plugins/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
+</head>
+
+
+<body>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="owl/js/owl.carousel.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js-plugins/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+    <script src="lightbox/dist/js/lightbox.js"></script>
+    <script src="aos/js/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        //hide all tabs first
+        $('.tab-content').hide();
+        //show the first tab content
+        $('#tab-1').show();
+
+        $('#select-box').change(function () {
+            dropdown = $('#select-box').val();
+            //first hide all tabs again when a new option is selected
+            $('.tab-content').hide();
+            //then show the tab content of whatever option value was selected
+            $('#' + "tab-" + dropdown).show();
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            let position = $(this).scrollTop();
+            if (position >= 1) {
+                $('#navbar').addClass('navbar-scroll');
+            } else {
+                $('#navbar').removeClass('navbar-scroll');
+            }
+        });
+        $(window).scroll(function () {
+            let position = $(this).scrollTop();
+            if (position >= 1) {
+                $('#navbarnew').addClass('navbar-scroll');
+            } else {
+                $('#navbarnew').removeClass('navbar-scroll');
+            }
+        });
+    </script>
+    <script>
+        $('.gallery-slider-one').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            fade: false,
+            dots: true,
+            infinite: true,
+            arrows: true,
+            prevArrow: "<span class='left-arrow'><i class='fa-solid fa-chevron-left'></i></span>",
+            nextArrow: "<span class='right-arrow'> <i class='fa-solid fa-chevron-right'></i> </span>",
+            asNavFor: '.first-slider'
+        });
+        $('.first-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.gallery-slider-one',
+            dots: false,
+            autoplay: false,
+            centerMode: false,
+            arrows: false,
+            focusOnSelect: true,
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-chevron-left'></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'> <i class='fa-solid fa-chevron-right'></i> </button>",
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+
+        $("#nav-home-tab").click(function () {
+            $('.gallery-slider-one').slick('refresh');
+            $('.first-slider').slick('refresh');
+        });
+
+    </script>
+
+    <script>
+            (function (d) {
+                var s = d.createElement("script");
+                /* uncomment the following line to override default position*/
+                s.setAttribute("data-position", 2);
+                /* uncomment the following line to override default size (values: small, large)*/
+                s.setAttribute("data-size", "small");
+                /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+                s.setAttribute("data-language", "language");
+                /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+                s.setAttribute("data-color", "#e90101");
+                /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+                s.setAttribute("data-type", "1");
+                /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
+                /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
+                /* uncomment the following line to override support on mobile devices*/
+                s.setAttribute("data-mobile", true);
+                /* uncomment the following line to set custom trigger action for accessibility menu*/
+                /* s.setAttribute("data-trigger", "triggerId")*/
+                s.setAttribute("data-account", "gBXxd5Kjn8");
+                s.setAttribute("src", "https://cdn.userway.org/widget.js");
+                (d.body || d.head).appendChild(s);
+            })(document)
+    </script>
+    <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org"
+            title="website accessibility">
+            website accessibility</a></noscript>
+</body>
+
+
+</html>
