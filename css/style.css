@@ -43,7 +43,14 @@
     font-family: Exodus-Demo-Sharpen;
     src: url('../fonts/Exodus-Demo-Sharpen.otf');
 }
-
+@font-face {
+    font-family:Begilas ;
+    src: url('../fonts/Begilas.otf');
+}
+@font-face {
+    font-family:Bagife ;
+    src: url('../fonts/Bagife.otf');
+}
 
 html {
     scroll-behavior: smooth;
@@ -127,6 +134,616 @@ body {
         transform: scale(1, 1);
     }
 }
+
+
+
+/* =================================navbar===================================== */
+#navbar{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 999099999999;
+    max-width:1680px;
+    margin: auto;
+    width: 100%;
+}
+#navbar .navbar{
+    padding:10px 85px;
+}
+#navbar .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#navbar .navbar-brand img{
+   width: 80px;
+}
+#navbar .navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+    font-family: Begilas;
+    text-transform: uppercase;
+    margin: 0px 25px;
+    font-family: 16px;
+}
+#navbar .div-inline svg{
+    color: #949494;
+    font-size: 18px;
+}
+#navbar .div-inline .fa-heart{
+    color: #901c2b;
+}
+#navbar .div-inline li{
+    display: inline;
+    font-weight: 500;
+    color: #3f3e3e;
+    margin: 0px 15px;
+}
+/* =================================navbar=end================================= */
+/* =================================carousel=================================== */
+#carousel{
+    position: relative;
+}
+#carousel .carousel-inner{
+    /* height: 746px; */
+}
+#carousel .carousel-item{
+    /* height: 746px; */
+}
+#carousel .carousel-item .carousel-background-img{
+    height:746px;
+    object-fit: cover   ;
+    width: 100%;
+}
+#carousel  .carousel-item-img .carousel-item-img-one{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 500px;
+}
+#carousel  .carousel-item-img .carousel-item-img-two{
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    right: 130px;
+}
+#carousel .carousel-caption {
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+    left:85px;
+    z-index: 10;
+    padding-top:0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+}
+#carousel .carousel-caption h5{
+    font-size: 28px;
+    font-family:Begilas ;
+    text-align: left;
+    margin: 20px 0px;
+}
+#carousel .carousel-caption h4{
+    font-size: 22px;
+    font-family:Begilas ;
+    text-align: left;
+    margin:15px 0px;
+}
+#carousel .carousel-caption .carousel-btn a{
+    font-size: 20px;
+    font-family:Begilas;
+    color: white;
+}
+#carousel .carousel-caption .carousel-btn {
+    display: inline-block;
+    width: 159px;
+    height:48px;
+    background-color: #901c2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+#carousel .carousel-caption .carousel-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 45px;
+    margin-top: 120px;
+}
+#carousel .carousel-caption .carousel-icons span{
+    display: inline-block;
+    width: 40px;
+    height:40px;
+    border-radius: 200px;
+    background-color: #901c2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#carousel .carousel-caption .carousel-icons span svg{
+   font-size: 20px;
+   color:#171717;
+}
+#carousel .carousel-caption p{
+    font-size: 60px;
+    font-family:Begilas ;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: left;
+}
+#carousel .carousel-caption p span{
+    color:#901c2b;
+
+}
+#carousel .carousel-control-prev{
+        position: absolute;
+        top:582px;
+        bottom: 0px;
+        left: -22px;
+        z-index: 99;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        color: #fff;
+        text-align: center;
+        opacity:0.8;
+        transition: opacity .15s ease;
+        background: transparent;
+        border: none;
+        height: 50px;
+}
+#carousel .carousel-control-next{
+        position: absolute;
+        top:582px;
+        bottom: 0px;
+        left:450px;
+        z-index: 99;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: start;
+        width: 15%;
+        color: #fff;
+        text-align: center;
+        opacity:0.8;
+        transition: opacity .15s ease;
+        background: transparent;
+        border: none;
+        height: 50px;
+}
+#carousel .carousel-control-prev-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+#carousel .carousel-control-next-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+#carousel .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom:110px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: left;
+    padding-left:85px ;
+    margin-right:0px;
+    margin-left:0px;
+    list-style: none;
+}
+#carousel .carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 122px;
+    height: 3px;
+    margin-right:0px;
+    margin-left:0px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #901c2b;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+#carousel .carousel-indicators .active {
+    background-color: #901c2b;
+    opacity: .5;
+}
+#carousel .carousel-down {
+   position: absolute;
+   top: 0px;
+   right:0px;
+   height: 746px;
+   width: 10%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   z-index: 9999999;
+   padding-right: 80px;
+}
+#carousel .carousel-down .carousel-down-icon{
+   width:35px;
+   height:35px;
+   background-color: #901c2b;
+   border-radius: 200px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+#carousel .carousel-down .carousel-down-icon svg{
+   color: white;
+   font-size: 18px;
+}
+/* =================================carousel=end================================= */
+/* =================================gallery===================================== */
+#gallery{
+    background-color: #181818;
+    padding: 120px 0px;
+}
+#gallery .gallery-content {
+    width: 88%;
+    margin: 0px auto;
+}
+#gallery .gallery-content h2{
+    font-size:36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Bagife;
+    color: white;
+    letter-spacing: 4px;
+    line-height: 0.8;
+}
+#gallery .gallery-content h3{
+    font-size:22px;
+    text-align: center;
+    text-transform: lowercase;
+    font-family:Begilas;
+    color: white;
+    letter-spacing:1px;
+}
+
+#gallery .gallery-content h3::after{
+    content: "";
+    height: 1px;
+    width: 97px;
+    display: inline-block;
+    background-color: #901c2b;
+    margin-left: 20px;
+    position: relative;
+    top:-3px;
+}
+#gallery .gallery-content h3::before{
+    content: "";
+    height: 1px;
+    width: 97px;
+    display: inline-block;
+    background-color: #901c2b;
+    margin-right: 20px;
+    position: relative;
+    top:-3px;
+}
+#gallery .gallery-content-imgs-one{
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 0px;
+}
+#gallery .gallery-content-imgs-one .imgs-one-content-img{
+    width: 375px;
+    height: 375px;
+}
+#gallery .gallery-content-imgs-one .imgs-one-content-img img{
+    width: 100%;
+    height: 100%;
+}
+#gallery .imgs-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 5px;
+}
+#gallery .imgs-name h2{
+   font-size: 30px;
+   font-family: Begilas;
+   line-height: 0.8;
+}
+#gallery .imgs-name a{
+   font-size: 18px;
+   font-family: Begilas;
+   color: white;
+   text-decoration: underline;
+}
+#gallery .owl-nav{
+    display: inline;
+}
+#gallery .gallery-nav-left{
+   color: white;
+   position: absolute;
+   bottom:-26px;
+   right: 363px;
+}
+#gallery .gallery-nav-right{
+   color: white;
+   position: absolute;
+   bottom:-26px;
+   right: 0px;
+}
+#gallery .owl-next:hover{
+   background-color:transparent;
+}
+#gallery .owl-prev:hover{
+   background-color:transparent;
+}
+#gallery .owl-prev:focus{
+   outline: none;
+}
+#gallery .owl-next:focus{
+   outline: none;
+}
+#gallery .owl-dot:hover{
+   background-color: transparent;
+}
+#gallery .owl-dot:focus{
+    outline: none;
+}
+#gallery .owl-dot{
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+#gallery  .owl-theme .owl-dots .owl-dot span {
+    width: 351px;
+    height: 3px;
+    margin: 0px;
+    background: #901c2b;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius:0px;
+    
+}
+#gallery .gallery-btn a{
+    font-size: 20px;
+    font-family:Begilas;
+    color: white;
+}
+#gallery .btn-span {
+    display: inline-block;
+    width: 159px;
+    height:48px;
+    background-color: #901c2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gallery .gallery-btn {
+    display: flex;
+    justify-content: center;
+}
+#gallery .gallery-owl {
+    margin-top: 60px ;
+}
+/* =================================gallery=end================================= */
+/* =================================brand===================================== */
+#brand{
+    background-color: #181818;
+    padding: 120px 0px;
+}
+#brand .brand-content {
+    width: 88%;
+    margin: 0px auto;
+    padding:20px 0px;
+    border-top: solid 2px #313131;
+    border-bottom: solid 2px #313131;
+}
+#brand .brand-content .brand-owl {
+    padding:0px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#brand .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+#brand .item .brand-img-box{
+    width:100px;
+}
+#brand .item .brand-img{
+    width: 100%;
+}
+/* =================================brand=end================================= */
+/* ==================================news===================================== */
+#news{
+    background: url(../images/newsletter-background.png);
+    padding: 120px 0px;
+    background-size: 100% 100%;
+}
+#news .news-content{
+    text-align: center;
+}
+#news .news-content h2{
+    font-size: 40px;
+    font-family:Begilas;
+    text-transform: uppercase;
+    color: white;
+    line-height: 0.8;
+}
+#news .news-content h3{
+    font-size: 16px;
+    font-family:Begilas;
+    color: white;
+    margin: 35px 0px;
+}
+#news .news-content input{
+    font-size: 16px;
+    font-family:Begilas;
+    color: white;
+    width: 430px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px white;
+    padding: 5px;
+}
+#news .news-content input::placeholder{
+    color: white;
+}
+#news .news-content input:focus{
+    outline: none;
+}
+#news .news-btn a{
+    font-size: 20px;
+    font-family:Begilas;
+    color: white;
+}
+#news .btn-span {
+    display: inline-block;
+    width: 159px;
+    height:48px;
+    background-color: #901c2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#news .news-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+/* ==================================news=end================================= */
+/* ================================footer===================================== */
+#footer{
+    background-color:#181818;
+    padding: 30px;
+}
+#footer .footer-background{
+    background: url(../images/footer-background.png);
+    background-size: 100% 100%;
+}
+#footer .footer-content{
+    padding: 90px 0px;
+    text-align: center;
+}
+#footer .footer-content .footer-logo{
+    display: flex;
+    justify-content: center;
+}
+#footer .footer-content .footer-logo img{
+    width:100px;
+}
+#footer .footer-content .footer-one-list {
+    display: flex;
+    gap: 63px;
+    justify-content: center;
+    margin: 35px 0px 0px 0px;
+}
+#footer .footer-content .footer-one-list li{
+    font-size: 16px;
+    font-family:Begilas;
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+    letter-spacing: 1px;
+}
+#footer .footer-content .footer-two-list {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin: 22px 0px;
+}
+#footer .footer-content .footer-two-list li{
+    font-size: 14px;
+    font-family:Begilas;
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+    letter-spacing: 1px;
+}
+#footer .footer-content h2{
+    font-size: 14px;
+    font-family:Begilas;
+    color: #901c2b;
+    text-transform: uppercase;
+    line-height: 1px;
+    text-decoration: underline;
+    margin: 32px 0px 0px 0px;
+}
+#footer .footer-content .footer-three-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 14px 0px;
+}
+#footer .footer-content .footer-three-list li{
+    font-size: 12px;
+    font-family:Begilas;
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+    letter-spacing: 1px;
+}
+#footer .footer-content .footer-four-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 14px 0px;
+}
+#footer .footer-content .footer-four-list li{
+    font-size: 12px;
+    font-family:Begilas;
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+    letter-spacing: 1px;
+}
+#footer .footer-content h3{
+    font-size: 12px;
+    font-family:Begilas;
+    color: white;
+    text-transform: uppercase;
+    margin: 14px 0px;
+    letter-spacing:1px;
+}
+#footer  .footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom:22px;
+    margin-top:71px;
+}
+#footer  .footer-icons span{
+    display: inline-block;
+    width: 40px;
+    height:40px;
+    border-radius: 200px;
+    background-color: #901c2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer  .footer-icons span svg{
+   font-size: 20px;
+   color:#171717;
+}
+/* ================================footer=end================================= */
 
 @media(max-width:1300px) {}
 
