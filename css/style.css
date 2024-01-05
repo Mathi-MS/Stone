@@ -2928,6 +2928,10 @@ body {
 }
 
 @media(max-width:600px) {
+    #gallery .owl-nav {
+        display: inline;
+        display: none;
+    }
     #gallery .gallery-owl-one{
         display: block;
         /* width: 375px;
@@ -3344,7 +3348,7 @@ body {
         font-size: 16px;
         font-family: Begilas;
         color: white;
-        width: 350px;
+        width: 80%;
         background-color: transparent;
         border: none;
         border-bottom: solid 1px white;
@@ -3355,6 +3359,53 @@ body {
         padding: 60px 0px;
         background-size: cover;
     }
+    #story .owl-dot {
+        position: absolute;
+        bottom: 40px;
+        right: 0px;
+    }
+    #story .story-nav-right {
+        color: white;
+        position: absolute;
+        bottom: 35px;
+        right: -5px;
+    }
+    #story .story-nav-left {
+        bottom: 35px; 
+    }
+    #famous .famous-content-one {
+        position: absolute;
+        right: 10%;
+        top: 190px;
+    }
+    #taste .taste-background .taste-background-img {
+        width: 359px;
+    }
+    #taste .taste-background .taste-content h2::after {
+        display: none;
+    }
+    #taste .taste-background .taste-content h2::before {
+        display: none;
+    }
+    #taste .taste-background .taste-content {
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+    }
+    #story {
+        background-color: #480e16;
+        padding: 80px 0px 80px 0px;
+        position: relative;
+    }
+    /* #taste .taste-content-owl {
+        position: absolute;
+        top: 225px;
+        left: 10%;
+        text-align: left;
+    } */
+    
+    
 }
 
 @media(max-width:391px) {
@@ -3410,23 +3461,16 @@ body {
     #famous .famous-owl {
         width: 250px;
     }
-    #story .owl-dot {
-        position: absolute;
-        bottom: 40px;
-        right: 0px;
-    }
-    #story .story-nav-right {
-        color: white;
-        position: absolute;
-        bottom: 35px;
-        right: -5px;
-    }
-    #story .story-nav-left {
-        bottom: 35px; 
-    }
+    
     #gallery .owl-carousel .owl-item img {
         display: block;
         width: 100%;
+    }
+    #famous .famous-content-one {
+        position: absolute;
+        right: 10%;
+        left: 18%;
+        top: 190px;
     }
 }
 
@@ -3438,6 +3482,32 @@ body {
     }
 }
 
-@media(max-width:363px) {}
+@media(max-width:363px) {
+    #taste .taste-content-owl {
+        position: absolute;
+        top: 220px;
+        left: 10%;
+        text-align: left;
+    }
+}
 
-@media(max-width:320px) {}
+@media(max-width:320px) {
+    
+    
+    #testi .testi-two {
+  left: -20%;
+        position: relative;
+        transform: none;
+    }
+    #famous .famous-two {
+  left: -20%;
+        position: relative;
+        transform: none;
+    }
+    #news .news-content h3 {
+        font-size: 16px;
+        font-family: Begilas;
+        color: white;
+        margin: 35px 31px;
+    }
+}
