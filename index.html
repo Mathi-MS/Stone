@@ -31,7 +31,7 @@
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <a class="navbar-brand" href="#"><img src="images/Logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"><i class="fa-solid fa-bars-staggered"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
@@ -905,7 +905,7 @@
         </div>
     </section>
     <!-- -----------------------------------footer-end------------------------------------------  -->
-    <a id="back_click_top" class="show"><img src="images/taste-1.png" alt=""></a>
+    <a id="back_click_top" class="show"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     <!-- -----------------------------------------------------------------------------  -->
     </footer>
     <script src="js/jquery.min.js"></script>
@@ -1173,6 +1173,11 @@ autoplayHoverPause:true,
             let value = window.scrollY;
             bige.style.top=value*.40+"px";
         })
+      </script>
+      <script>
+        $('.navbar-nav .nav-item .nav-link').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
       </script>
 </body>
 

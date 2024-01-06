@@ -151,6 +151,25 @@ body {
     /* //border: 1px solid #000; */
   }
 /* =================================navbar===================================== */
+.navbar-light .navbar-toggler-icon svg{
+    color: #901c2b;
+   font-size:25px;
+}
+.navbar-light .navbar-toggler:focus-visible{
+   outline: none;
+}
+.navbar-light .navbar-toggler:focus{
+    outline: none;
+ }
+.navbar-light .navbar-toggler{
+    border: solid 2px #480e16;
+   
+}
+.navbar-light .navbar-toggler-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #navbar{
     background-color: black;
     position: fixed;
@@ -1850,7 +1869,7 @@ body {
 
 #back_click_top {
     display: inline-block;
-    /* background-color: white; */
+    background-color: white;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -2354,7 +2373,7 @@ body {
 @media(max-width:992px) {
     #navbar {
         background-color: black;
-        position: sticky;
+        position: fixed;
         top: 0px;
         z-index: 999099999999;
         max-width: 1680px;
@@ -2363,6 +2382,9 @@ body {
     }
     #navbar .navbar {
         padding: 10px 85px;
+    }
+    #carousel{
+        margin-top:100px;
     }
     #carousel .carousel-item .carousel-background-img {
         height: 600px;
@@ -3425,6 +3447,11 @@ body {
     #footer {
         background-color: #181818;
         padding: 0px;
+    }
+    #footer .footer-content {
+        padding: 30px 0px;
+        text-align: center;
+        margin: 0px 10%;
     }
     #testi .testi-owl {
         width: 250px;
