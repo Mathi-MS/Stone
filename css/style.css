@@ -129,7 +129,27 @@ body {
     }
 }
 
-
+.img-wrapper {  
+    /* width: 400px;
+    height: 400px; */
+    overflow: hidden; 
+  }
+  
+  .inner-img {
+    transition: 2s;
+  }
+  
+  .inner-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Other styling elements, that are not necessary for the example */
+  
+  .img-wrapper {
+    /* display: inline-block; */
+    box-sizing: border-box;
+    /* //border: 1px solid #000; */
+  }
 
 /* =================================navbar===================================== */
 #navbar{
@@ -3292,9 +3312,23 @@ body {
         z-index: 9;
         right: 70px;
     }
+    #testi .testi-owl {
+        width: 200px;
+    }
+    #taste .taste-background .taste-background-img {
+        width: 405px;
+    }
+    #testi .testi-content-one {
+        position: absolute;
+        left: 160px;
+    }
 }
 
 @media(max-width:431px) {
+    #footer {
+        background-color: #181818;
+        padding: 0px;
+    }
     #testi .testi-owl {
         width: 250px;
     }
@@ -3404,7 +3438,16 @@ body {
         left: 10%;
         text-align: left;
     } */
-    
+    #taste .taste-content-owl {
+        position: absolute;
+        top: 350px;
+        left: 5%;
+        text-align: left;
+    }
+    #testi .testi-content-one {
+        position: absolute;
+        left: 40px;
+    }
     
 }
 
@@ -3487,6 +3530,22 @@ body {
         position: absolute;
         top: 220px;
         left: 10%;
+        text-align: left;
+    }
+    #famous .famous-two {
+        margin-left: -11%;
+        position: relative;
+        transform: none;
+    }
+    #testi .testi-two {
+        margin-left: -11%;
+        position: relative;
+        transform: none;
+    }
+    #taste .taste-content-owl {
+        position: absolute;
+        top: 220px;
+        left: 5%;
         text-align: left;
     }
 }
