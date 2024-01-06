@@ -191,6 +191,7 @@ body {
 #navbar .navbar-light .navbar-nav .active{
     border-bottom: solid 2px #901c2b;
 }
+
 #navbar .div-inline svg{
     color: #949494;
     font-size: 18px;
@@ -251,7 +252,7 @@ body {
     text-align: left;
     margin:15px 0px;
 }
-#carousel .carousel-caption .carousel-btn a{
+#carousel .carousel-caption .carousel-btn span{
     font-size: 20px;
     font-family:Begilas;
     color: white;
@@ -265,6 +266,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    text-decoration: none;
 }
 #carousel .carousel-caption .carousel-icons{
     display: flex;
@@ -283,6 +285,19 @@ body {
     align-items: center;
     justify-content: center;
 }
+#carousel .carousel-caption .carousel-icons a:hover{
+    animation: animName 5s linear infinite;
+    /* width: 80px; */
+  }
+  
+  @keyframes animName {
+   0%{
+      transform: rotate(0deg);
+     }
+  100%{
+      transform: rotate(360deg);
+     }
+  }
 #carousel .carousel-caption .carousel-icons span svg{
    font-size: 20px;
    color:#171717;
@@ -500,7 +515,7 @@ body {
 }
 #taste .taste-four{
     position: absolute;
-    top:450px;
+    top:0px;
     left:0px;
 }
 #taste .taste-four img{
@@ -542,6 +557,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 #taste .taste-btn {
     display: flex;
@@ -777,6 +793,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 #gallery .gallery-btn {
     display: flex;
@@ -971,6 +988,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 #discover .discover-btn {
     display: flex;
@@ -1062,6 +1080,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 #famous .famous-btnn {
     display: flex;
@@ -1240,6 +1259,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 #story .story-btn {
     display: flex;
@@ -1676,6 +1696,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 #news .news-btn {
     display: flex;
@@ -1803,6 +1824,19 @@ body {
     align-items: center;
     justify-content: center;
 }
+#footer  .footer-icons a:hover{
+    animation: animName 5s linear infinite;
+    /* width: 80px; */
+  }
+  
+  @keyframes animName {
+   0%{
+      transform: rotate(0deg);
+     }
+  100%{
+      transform: rotate(360deg);
+     }
+  }
 #footer  .footer-icons span svg{
    font-size: 20px;
    color:#171717;
@@ -1816,7 +1850,7 @@ body {
 
 #back_click_top {
     display: inline-block;
-    background-color: white;
+    /* background-color: white; */
     width: 50px;
     height: 50px;
     text-align: center;
@@ -1844,6 +1878,19 @@ body {
     line-height: 50px;
     color: #901c2b ;
 }
+#back_click_top img{
+    animation: animNameee 20s linear infinite;
+    width: 90px;
+  }
+  
+  @keyframes animNameee {
+   0%{
+      transform: rotate(0deg);
+     }
+  100%{
+      transform: rotate(360deg);
+     }
+  }
 /* ================================back-to-top=end================================= */
 @media (min-width: 1600px) {
     #carousel .carousel-caption h5 {
