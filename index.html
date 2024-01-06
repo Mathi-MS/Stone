@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="owl/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="js-plugins/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
+    
 </head>
 <body>
     <!-- -------------------------------------header-------------------------------------------------  -->
@@ -189,14 +190,14 @@
                 <div class="taste-one">
                     <img src="images/taste-1.png" alt="">
                 </div>
-                <div class="taste-two">
+                <div class="taste-two"  id="big">
                     <img src="images/taste-2.png" alt="">
                 </div>
                 <div class="taste-three">
                     <img src="images/taste-3.png" alt="">
                 </div>
-                <div class="taste-four">
-                    <img src="images/taste-big.png" alt="">
+                <div class="taste-four" id="bige">
+                    <img src="images/taste-big.png" alt="" >
                 </div>
                 <div class="taste-content-owl">
                     <h4>dark & roasty</h4>
@@ -1156,6 +1157,22 @@ autoplayHoverPause:true,
           e.preventDefault();
           $('html, body').animate({ scrollTop: 0 }, '300');
         });
+      </script>
+      <script>
+        let big = document.getElementById("big");
+
+        window.addEventListener("scroll",()=>{
+            let value = window.scrollY;
+            big.style.right=value*.2+"px";
+        })
+      </script>
+      <script>
+        let bige = document.getElementById("bige");
+
+        window.addEventListener("scroll",()=>{
+            let value = window.scrollY;
+            bige.style.top=value*.40+"px";
+        })
       </script>
 </body>
 
