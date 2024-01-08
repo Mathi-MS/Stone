@@ -3998,3 +3998,21 @@ body {
         margin: 35px 31px;
     }
 }
+.anime{
+    position: relative;
+    overflow: hidden;
+
+}
+.anime .anime-img{
+    position: absolute;
+    top:0px;
+    z-index:99999;
+    width:200px;
+}
+.anime .anime-img img{
+    width:100%;
+}
+/* <div class="anime">
+<div class="anime-img" id="fill">
+<img src="images/taste-1.png" alt="">
+</div> */
