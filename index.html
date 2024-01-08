@@ -53,16 +53,57 @@
                     <li class="nav-item">
                       <a class="nav-link hvr-underline-from-center" href="#offer">Updates</a>
                     </li>
-                    
                   </ul>
                   <div class="div-inline my-2 ">
-                    <a href=""><i class="fa-solid hvr-bob fa-magnifying-glass"></i></a>
+                    <a href=""   data-toggle="modal" data-target="#staticBackdrop"><i class="fa-solid hvr-bob fa-magnifying-glass"></i></a>
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                                <form class="form-inline my-2 ">
+                                    <input class="form-control  mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn search-btn btn-outline-danger my-2 my-sm-0" data-dismiss="modal" type="submit">Search</button>
+                                  </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- <button type="button" class="btn btn-primary"></button> -->
                     <li>|</li>
                     <a href=""><i class="fa-solid hvr-bob fa-heart"></i></a>
                     <li>|</li>
                     <a href=""><i class="fa-solid hvr-bob fa-cart-shopping"></i></a>
                     <li>|</li>
-                    <a href=""><i class="fa-solid hvr-bob fa-user"></i></a>
+                    <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa-solid hvr-bob fa-user"></i></a>
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button> -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog ">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <!-- <span aria-hidden="true">&times;</span> -->
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="recipient-name" class="col-form-label">Email:</label>
+                                  <input type="email" class="form-control" id="recipient-name" required/>
+                                </div>
+                                <div class="form-group">
+                                  <label for="message-text" class="col-form-label">Password:</label>
+                                  <input  type="password" class="form-control" id="message-text" required/>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-outline-danger model-footer-btn" data-dismiss="modal">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </nav>
@@ -191,7 +232,7 @@
     <section id="taste">
         <div class="taste-background">
             <img class="taste-background-img" src="images/taste-background.png" alt="">
-            <div class="taste-content">
+            <div class="taste-content"  data-aos="fade-up">
                 <h2>Discover plenty of wineries</h2>
                 <h3>tastes like heaven</h3>
             </div>
@@ -217,12 +258,13 @@
                 <div class="taste-four" id="bige">
                     <img src="images/taste-big.png" alt="" >
                 </div>
-                <div class="taste-content-owl">
-                    <h4>dark & roasty</h4>
-                    <h5>100% Organic</h5>
+                <div class="taste-content-owl"  data-aos="fade-up">
+                  
                     <!-- =====  -->
                     <div class="owl-carousel owl-theme taste-owl">
                         <div class="item">
+                            <h4>dark & roasty</h4>
+                            <h5>100% Organic</h5>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>
                                 industry. Lorem Ipsum has been the industry's standard dummy text <br>
                                 ever since the 1500s, when an unknown printer took a galley of type <br>
@@ -243,6 +285,8 @@
                                  </div>
                         </div>
                         <div class="item">
+                            <h4>dark & roasty</h4>
+                            <h5>100% Organic</h5>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>
                                 industry. Lorem Ipsum has been the industry's standard dummy text <br>
                                 ever since the 1500s, when an unknown printer took a galley of type <br>
@@ -275,9 +319,9 @@
     <!-- -------------------------------------taste-end-----------------------------------------  -->
     <!-- -------------------------------------Gallery---------------------------------------------  -->
     <section id="gallery">
-        <div class="gallery-content">
-            <h2>Shop Our amazing Liquor</h2>
-            <h3>the best recipes and old tradition</h3>
+        <div class="gallery-content" >
+            <h2  data-aos="fade-up">Shop Our amazing Liquor</h2>
+            <h3  data-aos="fade-up">the best recipes and old tradition</h3>
             <div class="owl-carousel owl-theme gallery-owl">
                 <div class="gallery-content-imgs">
                     <div class="gallery-content-imgs-one">
@@ -468,7 +512,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-btn ">
+            <div class="gallery-btn"  data-aos="fade-up">
                 <a href="#" class="btn-span hvr-curl-bottom-left"><span href="#">View All</span></a>
             </div>
         </div>
@@ -481,14 +525,14 @@
                 <div class="offer-content-one">
                    
                         <!-- ===  -->
-                        <h2>Tastes like heaven</h2>
+                        <h2  data-aos="fade-up">Tastes like heaven</h2>
                         <div class="owl-carousel owl-theme offer-owl">
                             <div class="item">
                                 
-                                <h3>Get an Extra 10% off <br>
+                                <h3  data-aos="fade-up">Get an Extra 10% off <br>
                                     your first order
                                 </h3>
-                                <p>With a large selection of popular spirits and hard to find  rare liquors, we are    your one stop shop for all your alcohol needs.
+                                <p  data-aos="fade-up">With a large selection of popular spirits and hard to find  rare liquors, we are    your one stop shop for all your alcohol needs.
                                 </p>
                             </div>
                             <div class="item">
@@ -514,7 +558,7 @@
                     </div>
                     <div class="offer-content-bottom-border">
                     </div>
-                    <div class="offer-arrow">
+                    <div class="offer-arrow"  data-aos="fade-up">
                         <a href="#" class="offer-span"><span class="offer-svg"><i class="fa-solid fa-chevron-down"></i></span><span href="#">Whiskey <br>
                             Selection</span></a>
                     </div>
@@ -532,7 +576,7 @@
                 <!-- <div class="discover-img">
                     <img src="images/discover-background-one.png" alt="">
                 </div> -->
-                <div class="center-content">
+                <div class="center-content"  data-aos="fade-up">
                     <h2>hand <br>
                         made
                     </h2>
@@ -543,11 +587,11 @@
                 </div>
                
             </div>
-            <div class="discover-content-two">
+            <div class="discover-content-two" >
                 <!-- <div class="discover-img">
                     <img src="images/discover-background-two.png" alt="">
                 </div> -->
-                <div class="center-content">
+                <div class="center-content"  data-aos="fade-up">
                     <h2>special <br>
                         edition
                     </h2>
@@ -585,7 +629,7 @@
             <div class="famous-content-one">
                 <h2>Highly Concentrated</h2>
                 
-            <div class="owl-carousel owl-theme famous-owl">
+            <div class="owl-carousel owl-theme famous-owl" data-aos="zoom-in">
                 <div class="item">
                     <h3>knock <br>
                         out <br>
@@ -607,10 +651,10 @@
             </div>
            
             </div>
-            <div class="famous-btn">
+            <div class="famous-btn" data-aos="zoom-in">
                 <a href="#" class="btn-span"><span href="#">Rich Tradition for Beers</span></a>
             </div>
-            <div class="famous-arrow">
+            <div class="famous-arrow" data-aos="zoom-in">
                 <a href="#" class="arrow-span"><span class="arrow-svg"><i class="fa-solid fa-chevron-down"></i></span><span href="#">Famous <br>
                     brewers</span></a>
             </div>
@@ -620,7 +664,7 @@
     <!-- -------------------------------------story---------------------------------------------  -->
     <section id="story">
         <div class="story-content">
-            <div class="story-content-one">
+            <div class="story-content-one" data-aos="fade-up">
                 <h2>Our <br>
                     stories
                 </h2>
@@ -629,13 +673,13 @@
                     <a href="#" class="story-span hvr-curl-bottom-left"><span href="#">More</span></a>
                 </div>
             </div>
-            <div class="story-content-two">
+            <div class="story-content-two" >
                 <div class="card" >
                     <img src="images/story-carousel-images.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <!-- =======  -->
-                        <div class="owl-carousel owl-theme story-owl">
-                            <div class="item">
+                        <div class="owl-carousel owl-theme story-owl" >
+                            <div class="item" data-aos="fade-up">
                                 <h2>The Value of <br>
                                     Fractional Pours</h2>
                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
@@ -660,19 +704,19 @@
     <!-- -------------------------------------story-end-----------------------------------------  -->
     <!-- -------------------------------------recieps---------------------------------------------  -->
     <section id="recipes">
-        <div class="recipes-content">
+        <div class="recipes-content" data-aos="fade-up">
             <h2>Lorem Ipsum is simply dummy text</h2>
             <h3>THE BEST RECIPES <br>
                 AND OLD TRADITION</h3>
-            <div class="recipes-boxes">
+            <div class="recipes-boxes" data-aos="fade-up">
                 <div class="recipes-box">
                     <div class="recipes-box-img img-wrapper">
                         <img src="images/rec-1.png" alt="" class="inner-img">
                     </div>
-                    <h4>APR 18 - LEONA LOWIS- wines</h4>
-                    <h5>THE WHISKEY</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    <div class="recipes-btn">
+                    <h4 data-aos="fade-up">APR 18 - LEONA LOWIS- wines</h4>
+                    <h5 data-aos="fade-up">THE WHISKEY</h5>
+                    <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <div data-aos="fade-up" class="recipes-btn">
                         <a href="#" class="btn-span"><span href="#">Read more</span></a>
                     </div>
                 </div>
@@ -680,10 +724,10 @@
                     <div class="recipes-box-img img-wrapper">
                         <img src="images/rec-2.png" alt="" class="inner-img">
                     </div>
-                    <h4>Jan 20 - LEONA LOWIS- wines</h4>
-                    <h5>WINE DELIGHT</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    <div class="recipes-btn">
+                    <h4 data-aos="fade-up">Jan 20 - LEONA LOWIS- wines</h4>
+                    <h5 data-aos="fade-up">WINE DELIGHT</h5>
+                    <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <div data-aos="fade-up" class="recipes-btn">
                         <a href="#" class="btn-span"><span href="#">Read more</span></a>
                     </div>
                 </div>
@@ -691,10 +735,10 @@
                     <div class="recipes-box-img img-wrapper">
                         <img src="images/rec-3.png" alt="" class="inner-img">
                     </div>
-                    <h4>Jan 20 - LEONA LOWIS- wines</h4>
-                    <h5>FINE GIFTS</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    <div class="recipes-btn">
+                    <h4 data-aos="fade-up">Jan 20 - LEONA LOWIS- wines</h4>
+                    <h5 data-aos="fade-up">FINE GIFTS</h5>
+                    <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <div data-aos="fade-up" class="recipes-btn">
                         <a href="#" class="btn-span"><span href="#">Read more</span></a>
                     </div>
                 </div>
@@ -702,10 +746,10 @@
                     <div class="recipes-box-img img-wrapper">
                         <img src="images/rec-4.png" alt="" class="inner-img">
                     </div>
-                    <h4>Jan 20 - LEONA LOWIS- wines</h4>
-                    <h5>WINE FESTIVAL</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    <div class="recipes-btn">
+                    <h4 data-aos="fade-up" >Jan 20 - LEONA LOWIS- wines</h4>
+                    <h5 data-aos="fade-up" >WINE FESTIVAL</h5>
+                    <p data-aos="fade-up" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <div  data-aos="fade-up" class="recipes-btn">
                         <a href="#" class="btn-span"><span href="#">Read more</span></a>
                     </div>
                 </div>
@@ -779,10 +823,10 @@
                     <img src="images/testi-bottom-leaf.png" alt="">
                 </div>
             </div>
-            <div class="testi-content-one">
+            <div class="testi-content-one" data-aos="flip-down">
                 <h2>Testimonial</h2>
                 <h3>Happy Clients</h3>
-            <div class="owl-carousel owl-theme testi-owl">
+            <div class="owl-carousel owl-theme testi-owl" >
                 <div class="item">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has>been the industry's standard dummy text. Lorem Ipsum is  <br> simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br> been the industry's standard dummy text.</p>
                         <div class="reviewer">
@@ -854,11 +898,11 @@
     <!-- -------------------------------------news----------------------------------------------  -->
     <section id="news">
         <div class="news-content">
-            <h2>Newsletter</h2>
-            <h3>Receive a 10% discount code via email when you <br>
+            <h2 data-aos="fade-up">Newsletter</h2>
+            <h3 data-aos="fade-up">Receive a 10% discount code via email when you <br>
                 sign up for our Store offers & updates.</h3>
-                <input type="text" placeholder="Enter Your Email">
-                <div class="news-btn">
+                <input data-aos="fade-up" type="text" placeholder="Enter Your Email">
+                <div data-aos="fade-up" class="news-btn">
                     <a href="#" class="btn-span hvr-curl-bottom-left"><span href="#">Subscribe</span></a>
                 </div>
         </div>
@@ -870,10 +914,10 @@
     <section id="footer">
         <div class="footer-background">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-logo" data-aos="fade-up">
                     <img src="images/footer-logo.png" alt="">
                 </div>
-                <ul class="footer-one-list">
+                <ul class="footer-one-list" data-aos="fade-up">
                     <li>atones river </li>
                     <li>Shop</li>
                     <li>Collections</li>
@@ -881,44 +925,44 @@
                     <li>Contact</li>
                     <li>updates</li>                                                     
                 </ul>
-                <ul class="footer-two-list">
+                <ul class="footer-two-list" data-aos="fade-up">
                     <li>Terms & Conditions </li>
                     <li>Privacy Policy </li>
                     <li>About Contact</li>
                     <li>Consumer</li>
                     <li>Information</li>                                                     
                 </ul>  
-                <h2 class="information">
+                <h2 class="information" data-aos="fade-up">
                     Information
                 </h2>   
-                <ul class="footer-three-list">
+                <ul class="footer-three-list" data-aos="fade-up">
                     <li>Search Terms </li>
                     <li>Advanced Search   </li>
                     <li>Help & Faq's</li>
                     <li>Store Location</li>
                     <li>Orders & Returns</li>                                                     
                 </ul>     
-                <h2 class="support">
+                <h2 class="support" data-aos="fade-up">
                     support
                 </h2>   
-                <ul class="footer-four-list">
+                <ul class="footer-four-list" data-aos="fade-up">
                     <li>Stones River Services </li>
                     <li>Meet Our Team</li>
                     <li>Privacy Policy </li>
                     <li>Trade Registration</li>
                     <li>Information</li>   
                 </ul>     
-                <h4 class="contact">
+                <h4 class="contact" data-aos="fade-up">
                     contact
                 </h4>   
-                <h3>xyz35 W 23nd Street, river Road, qwertyui ioopmgf 15. cdawt890, USA.</h3>   
+                <h3 data-aos="fade-up">xyz35 W 23nd Street, river Road, qwertyui ioopmgf 15. cdawt890, USA.</h3>   
                 <div class="footer-icons">
                     <a href="https://www.facebook.com/"><span><i class="fa-brands fa-facebook-f"></i></span></a>
                     <a href="https://twitter.com/login"><span><i class="fa-brands fa-twitter"></i></span></a>
                     <a href="https://in.linkedin.com/"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
                     <a href="https://www.instagram.com/"><span><i class="fa-brands fa-instagram"></i></span></a>
                 </div>  
-                <h3>All rights reserved, Copyrights ©2024 stones river total beverages - Powered by Aries Connects World</h3>                  
+                <h3 data-aos="fade-up">All rights reserved, Copyrights ©2024 stones river total beverages - Powered by Aries Connects World</h3>                  
             </div>
         </div>
     </section>
@@ -964,9 +1008,9 @@
     nav:false,
     dots:false,
     dots:false,
-    autoplay:true,
-autoplayTimeout:900,
-autoplayHoverPause:false,
+    autoplay: true,
+      autoplaySpeed: 7000,
+      autoplayHoverPause:false,
     responsive:{
         0:{
             items:1
@@ -978,8 +1022,9 @@ autoplayHoverPause:false,
             items:3
         },
         1000:{
-            items:5,
-            loop:false,
+            items:5, 
+            autoplay: true,
+      autoplaySpeed: 10000,
         }
     }
 })

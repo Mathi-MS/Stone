@@ -66,6 +66,7 @@ body {
     max-width: 1680px;
     position: relative;
     background-color: #181818;
+    font-family:'Bagife' ;
 }
 
 @media (max-width: 5120px) {
@@ -128,7 +129,18 @@ body {
         transform: scale(1, 1);
     }
 }
-
+.modal-dialog  input:focus{
+    outline: #901c2b 2px solid !important;
+    box-shadow:none;
+}
+.model-footer-btn{
+    background-color: #901c2b;
+    color: white;
+}
+.search-btn{
+    background-color: #901c2b;
+    color: white;
+}
 .img-wrapper {  
     /* width: 400px;
     height: 400px; */
@@ -258,7 +270,22 @@ body {
     padding-bottom: 0px;
     color: #fff;
     text-align: center;
+    animation: carouselanime 6s linear infinite;
 }
+      @keyframes carouselanime {
+       0%{
+         opacity: 0;
+         left: 200px;
+         }
+       50%{
+         opacity:1;
+         left:85px;
+         }
+      100%{
+          opacity: 0;
+          left:200px;
+         }
+      }
 #carousel .carousel-caption h5{
     font-size: 28px;
     font-family:Begilas ;
@@ -1047,7 +1074,19 @@ body {
    position: absolute;
    z-index: 9;
    bottom: 0px;
+   animation: craftbeer 4s linear  infinite;
 }
+@keyframes craftbeer {
+    0%{
+      opacity: 0;
+      }
+   50%{
+    opacity: 1;
+      }
+   100%{
+    opacity: 0;
+    }
+   }
 #famous .famous-two {
    margin-left:23%;
    position: relative;
@@ -1056,12 +1095,38 @@ body {
     position: absolute;
     top: -20px;
     left: 100px;
+    animation: topleaf 5s linear  infinite;
 }
+  @keyframes topleaf {
+   0%{
+      top: 0px;
+     }
+  50%{
+    top: 50px;
+    transform: rotate(20deg);
+     }
+  100%{
+    top: 0px;
+     }
+  }
 #famous .famous-bottom-leaf{
     position: absolute;
     bottom: -20px;
     left: 100px;
+    animation: bottomleaf 5s linear  infinite;
 }
+@keyframes bottomleaf {
+    0%{
+       bottom: -20px;
+      }
+   50%{
+     bottom:50px;
+     transform: rotate(-20deg);
+      }
+   100%{
+     bottom: -20px;
+      }
+   }
 #famous .famousmonals{
    display: flex;
    flex-direction: row;
@@ -1273,7 +1338,20 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
+  animation: storyback 5s linear  infinite;
+
 }
+@keyframes storyback {
+    0%{
+       left: 0px;
+      }
+   50%{
+     left:-50px;
+      }
+   100%{
+     left: 0px;
+      }
+   }
 #story .story-btn a{
     font-size: 20px;
     font-family:Begilas;
@@ -1437,7 +1515,10 @@ body {
     padding: 0px;
     display: inline;
     text-transform: uppercase;
-    
+}
+#recipes .recipes-btn a:hover{
+    color: #901c2b;
+    border-bottom: 1px solid #901c2b;
 }
 #recipes .recipes-btn .btn-span:hover{
     text-decoration: none;
@@ -1500,7 +1581,20 @@ body {
    left:0px;
    top: 0px;
    z-index: 999999;
+   animation: testiback 5s linear  infinite;
+
 }
+@keyframes testiback {
+    0%{
+       left: 0px;
+      }
+   50%{
+     left:-50px;
+      }
+   100%{
+     left: 0px;
+      }
+   }
 #testi .testi-two {
    margin-left:23%;
    position: relative;
@@ -1509,11 +1603,14 @@ body {
     position: absolute;
     top: -20px;
     left: 100px;
+    animation: topleaf 4s linear  infinite;
 }
+
 #testi .testi-bottom-leaf{
     position: absolute;
     bottom: -20px;
     left: 100px;
+    animation: bottomleaf 4s linear  infinite;
 }
 #testi .testimonals{
    display: flex;
@@ -1540,6 +1637,7 @@ body {
     position: absolute;
     right:200px;
 }
+ 
 #testi .testi-content-one p{
     color: white;
     font-size:15px;
@@ -1617,6 +1715,10 @@ body {
     color: white;
     border-bottom: 1px solid white;
     padding: 0px;
+}
+#testi .testi-btn a:hover{
+    color: #901c2b;
+    border-bottom: 1px solid #901c2b;
 }
 #testi .testi-btn .btn-span:hover{
     text-decoration: none;
