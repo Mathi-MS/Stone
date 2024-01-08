@@ -1163,7 +1163,8 @@ autoplayHoverPause:true,
 
         window.addEventListener("scroll",()=>{
             let value = window.scrollY;
-            big.style.right=value*.2+"px";
+            // big.style.right=value*.1+"px";
+            big.style.transform="rotate"+"("+value*.40+"deg"+")"
         })
       </script>
       <script>
