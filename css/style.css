@@ -238,20 +238,20 @@ body {
 }
 #carousel  .carousel-item-img .carousel-item-img-one{
     position: absolute;
-    bottom: 0px;
+    bottom:-300px;
     right: 20px;
     width: 500px;
 }
 #carousel  .carousel-item-img .carousel-item-img-two{
     position: absolute;
-    bottom: 0px;
+    bottom: -300px;
     width: 350px;
     right: 130px;
 }
 #carousel .carousel-caption {
     position: absolute;
     right: 0px;
-    bottom:0px;
+    bottom:300px;
     left:85px;
     z-index: 10;
     padding-top:0px;
@@ -271,12 +271,12 @@ body {
     text-align: left;
     margin:15px 0px;
 }
-#carousel .carousel-caption .carousel-btn span{
+#carousel  .carousel-btn span{
     font-size: 20px;
     font-family:Begilas;
     color: white;
 }
-#carousel .carousel-caption .carousel-btn {
+#carousel .carousel-btn {
     display: inline-block;
     width: 159px;
     height:48px;
@@ -286,15 +286,21 @@ body {
     justify-content: center;
     margin-top: 40px;
     text-decoration: none;
+    position: absolute;
+    left:6%;
+    bottom:200px;
 }
-#carousel .carousel-caption .carousel-icons{
+#carousel  .carousel-icons{
     display: flex;
     flex-direction: row;
     gap: 12px;
     margin-bottom: 45px;
     margin-top: 120px;
+    position: absolute;
+    left:6%;
+    bottom:10px;
 }
-#carousel .carousel-caption .carousel-icons span{
+#carousel  .carousel-icons span{
     display: inline-block;
     width: 40px;
     height:40px;
@@ -304,9 +310,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-#carousel .carousel-caption .carousel-icons a:hover{
+#carousel  .carousel-icons a:hover{
     animation: animName 5s linear infinite;
-    /* width: 80px; */
+}
+#carousel  .carousel-icons a{
+    color: white;
+    font-size: 20px;
   }
   
   @keyframes animName {
@@ -337,7 +346,7 @@ body {
         position: absolute;
         top:582px;
         bottom: 0px;
-        left: -22px;
+        left:-15px;
         z-index: 99;
         display: -ms-flexbox;
         display: flex;
@@ -389,7 +398,7 @@ body {
     position: absolute;
     right: 0;
     bottom:110px;
-    left: 0;
+    left:0px;
     z-index: 15;
     display: -ms-flexbox;
     display: flex;
@@ -1934,20 +1943,20 @@ body {
     }
     #carousel .carousel-item-img .carousel-item-img-one {
         position: absolute;
-        bottom: 0px;
+        bottom:-300px;
         right: 55px;
         width: 670px;
     }
     #carousel .carousel-item-img .carousel-item-img-two {
         position: absolute;
-        bottom: 0px;
+        bottom:-300px;
         width: 390px;
         right: 224px;
     }
     #carousel .carousel-caption {
         position: absolute;
         right: 0px;
-        bottom: 0px;
+        bottom:300px;
         left: 110px;
         z-index: 10;
         padding-top: 0px;
@@ -2116,6 +2125,16 @@ body {
     }
 }
 @media(max-width:1300px) {
+    #navbar .navbar-light .navbar-nav .nav-link {
+        color: #ffffff;
+        font-family: Begilas;
+        text-transform: uppercase;
+        margin: 0px 16px;
+        font-family: 16px;
+        border-bottom: solid 2px transparent;
+    }
+}
+@media(max-width:1280px) {
 
 }
 
@@ -2124,7 +2143,7 @@ body {
         color: #ffffff;
         font-family: Begilas;
         text-transform: uppercase;
-        margin: 0px 14px;
+        margin: 0px 8px;
         font-family: 16px;
     }
     #taste .taste-four img {
@@ -2157,8 +2176,46 @@ body {
         top: 0px;
         z-index: 0;
     }
+    #carousel .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 110px;
+        left: -5px;
+    }
+    #carousel .carousel-control-next {
+        position: absolute;
+        top: 582px;
+        bottom: 0px;
+        left: 444px;
+    }
 }
-
+@media(max-width:1080px) {
+    #navbar .navbar-light .navbar-nav .nav-link {
+        color: #ffffff;
+        font-family: Begilas;
+        text-transform: uppercase;
+        margin: 0px 5px;
+        font-family: 16px;
+    }
+    #navbar .div-inline li {
+        display: inline;
+        font-weight: 500;
+        color: #3f3e3e;
+        margin: 0px 8px;
+    }
+    #carousel .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 110px;
+        left: -15px;
+    }
+    #carousel .carousel-control-next {
+        position: absolute;
+        top: 582px;
+        bottom: 0px;
+        left: 434px;
+    }
+}
 @media(max-width:1024px) {
     #carousel .carousel-down {
         position: absolute;
@@ -2381,7 +2438,7 @@ body {
         width: 100%;
     }
     #navbar .navbar {
-        padding: 10px 85px;
+        /* padding: 10px 85px; */
     }
     #carousel{
         margin-top:100px;
@@ -2393,9 +2450,9 @@ body {
     }
     #carousel .carousel-control-prev {
         position: absolute;
-        top:460px;
+        top:410px;
         bottom: 0px;
-        left:15px;
+        left:0px;
         z-index: 99;
         display: -ms-flexbox;
         display: flex;
@@ -2414,9 +2471,9 @@ body {
     }
     #carousel .carousel-control-next {
         position: absolute;
-        top: 460px;
+        top: 410px;
         bottom: 0px;
-        left: 400px;
+        left:388px;
         z-index: 99;
         display: -ms-flexbox;
         display: flex;
@@ -2438,13 +2495,13 @@ body {
     }
     #carousel .carousel-item-img .carousel-item-img-two {
         position: absolute;
-        bottom: 0px;
+        bottom:-300px;
         width: 280px;
         right: 130px;
     }
     #carousel .carousel-item-img .carousel-item-img-one {
         position: absolute;
-        bottom: 0px;
+        bottom:-300px;
         right: 25px;
         width: 450px;
     }
@@ -2463,8 +2520,8 @@ body {
     #carousel .carousel-indicators {
         position: absolute;
         right: 0;
-        bottom: 61px;
-        left:15px;
+        bottom:110px;
+        left:0px;
         z-index: 15;
         display: -ms-flexbox;
         display: flex;
@@ -2556,6 +2613,17 @@ body {
          transition: opacity .2s ease;
          border-radius:0px;
      }
+     #carousel .carousel-caption {
+        position: absolute;
+        right: 0px;
+        bottom: 300px;
+        left: 6%;
+        z-index: 10;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: #fff;
+        text-align: center;
+    }
 }
 
 @media(max-width:820px) {
@@ -2570,13 +2638,8 @@ body {
     #carousel .carousel-caption {
         position: absolute;
         right: 0px;
-        bottom: 85px;
-        left: 85px;
-        z-index: 10;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        color: #fff;
-        text-align: center;
+        bottom: 170px;
+        left: 6%;
     }
     #carousel .carousel-item .carousel-background-img {
         height: 500px;
@@ -2587,13 +2650,13 @@ body {
         position: absolute;
         right: 0;
         bottom: 12px;
-        left: 15px;
+        left: 0px;
         z-index: 15;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
         justify-content: left;
-        padding-left: 85px;
+        padding-left: 6%;
         margin-right: 0px;
         margin-left: 0px;
         list-style: none;
@@ -2602,14 +2665,14 @@ body {
         position: absolute;
         top: 460px;
         bottom: 0px;
-        left: 35px;
+        left: 5%;
         z-index: 99;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
         align-items: center;
         -ms-flex-pack: center;
-        justify-content: center;
+        justify-content: start;
         width: 15%;
         color: #fff;
         text-align: center;
@@ -2621,7 +2684,7 @@ body {
     }
     #carousel .carousel-item-img .carousel-item-img-two {
         position: absolute;
-        bottom: -29px;
+        bottom: -175px;
         width: 280px;
         right: 20px;
     }
@@ -2630,7 +2693,7 @@ body {
     }
     #carousel .carousel-item-img .carousel-item-img-one {
         position: absolute;
-        bottom: 111px;
+        bottom:-70px;
         right: -107px;
         width: 450px;
         transform: rotate(270deg);
@@ -2656,7 +2719,7 @@ body {
         position: absolute;
         top: 460px;
         bottom: 0px;
-        left: 305px;
+        left:258px;
         z-index: 99;
         display: -ms-flexbox;
         display: flex;
@@ -2672,6 +2735,31 @@ body {
         background: transparent;
         border: none;
         height: 0px;
+    }
+    #carousel .carousel-btn {
+        display: inline-block;
+        width: 159px;
+        height: 48px;
+        background-color: #901c2b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        text-decoration: none;
+        position: absolute;
+        left: 6%;
+        bottom: 17%;
+    }
+    #carousel .carousel-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        margin-bottom: 45px;
+        margin-top: 120px;
+        position: absolute;
+        left: 6%;
+        bottom: 10px;
+        display: none;
     }
     #taste {
         background-color: #181818;
@@ -3093,7 +3181,7 @@ body {
     }
     #carousel .carousel-item-img .carousel-item-img-two {
         position: absolute;
-        bottom: -29px;
+        bottom:-169px;
         width: 190px;
         right: 20px;
     }
@@ -3106,11 +3194,11 @@ body {
         position: absolute;
         top: 404px;
         bottom: 0px;
-        left:-2px;
+        /* left:-2px; */
     }
     #carousel .carousel-control-next {
         top: 404px;
-        left: 255px;
+        left: 240px;
     }
     #carousel .carousel-caption p {
         font-size: 40px;
@@ -3135,7 +3223,7 @@ body {
     #carousel .carousel-caption {
     position: absolute;
     right: 0px;
-    bottom: 85px;
+    bottom:160px;
     left: 6%;
     z-index: 10;
     padding-top: 0px;
@@ -3147,21 +3235,13 @@ body {
         position: absolute;
         right: 0;
         bottom: 12px;
-        left: -37px;
     }
     #navbar .navbar {
         padding: 10px 8%;
     }
     #carousel .carousel-item-img .carousel-item-img-one {
         position: absolute;
-        bottom: 111px;
-        right: -107px;
-        width: 400px;
-        transform: rotate(270deg);
-    }
-    #carousel .carousel-item-img .carousel-item-img-one {
-        position: absolute;
-        bottom: 93px;
+        bottom:-100px;
         right: -95px;
         width: 384px;
         transform: rotate(270deg);
@@ -3444,6 +3524,40 @@ body {
 }
 
 @media(max-width:431px) {
+    #carousel .carousel-control-prev {
+        position: absolute;
+        top: 404px;
+        bottom: 0px;
+        /* left: 0px; */
+    }
+    #carousel .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 12px;
+        /* left: -48px; */
+    }
+    #carousel .carousel-indicators li {
+        width: 40px;
+    }
+    #carousel .carousel-control-next {
+        top: 404px;
+        left: 140px;
+    }
+    #carousel .carousel-item-img .carousel-item-img-two {
+        position: absolute;
+        /* bottom: -29px; */
+        width: 140px;
+        right: 20px;
+    }
+    #famous .famous-btn a {
+        display: none;
+    }
+    #testi .testi-btn {
+        position: absolute;
+        bottom: 0px;
+        z-index: 9;
+        right: 70px;
+    }
     #footer {
         background-color: #181818;
         padding: 0px;
@@ -3623,7 +3737,7 @@ body {
         position: absolute;
         top: 404px;
         bottom: 0px;
-        left: 14px;
+        left: 16px;
     }
     #famous .famous-owl {
         width: 250px;
