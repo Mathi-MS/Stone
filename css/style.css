@@ -682,14 +682,14 @@ body {
 #taste .taste-nav-left{
     color: white;
     position: absolute;
-    top:-145px;
+    top:50px;
      right:-125px;
      transform: rotate(90deg);
  }
  #taste .taste-nav-right{
     color: white;
     position: absolute;
-    top:-90px;
+    top:100px;
     right:-125px;
   transform: rotate(90deg);
  }
@@ -713,7 +713,7 @@ body {
  }
  #taste .owl-dot{
      position: absolute;
-     top:-110px;
+     top:80px;
      right:-150px;
  }
  #taste  .owl-theme .owl-dots .owl-dot span {
@@ -4001,13 +4001,12 @@ body {
 .anime{
     position: relative;
     overflow: hidden;
-
 }
 .anime .anime-img{
     position: absolute;
     top:0px;
     z-index:99999;
-    width:200px;
+    width:400px;
 }
 .anime .anime-img img{
     width:100%;
